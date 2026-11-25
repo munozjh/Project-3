@@ -48,8 +48,10 @@ export const projectsData = [
     category: "IT & Security",
     description:
       "Deployment, configuration, and operational support for endpoint detection (EDR) and security monitoring (SIEM) across enterprise environments.",
-    tags: ["EDR", "SIEM", "Network Security", "ITIL"],
-    demoUrl: "",
+    technologies: ["EDR", "SIEM", "Network Security", "ITIL"],
+    githubUrl: "",
+    liveUrl: "",
+    visualType: "network",
   },
   {
     id: 3,
