@@ -1,44 +1,43 @@
-# Personal Portfolio — Jacklin Munoz
+# 🛡️ Jacklin Munoz — Personal Portfolio
 
-A modern, modular, and responsive single-page portfolio web application built with **React** and **Vite**, designed to showcase professional experience across **IT Technical Support, Network & Cybersecurity**, and **AI & Software Development**.
+A modern, responsive single-page portfolio web application built with **React** and **Vite**, designed with a dark cybersecurity-inspired UI to showcase experience across **IT Technical Support, Network & Cybersecurity**, and **AI & Full-Stack Software Development**, and deployed on **GitHub Pages** and **Netlify**.
 
-**Live Demo:** [https://munozjh.github.io/Project-3/](https://munozjh.github.io/Project-3/)
+## 🔗 Live Links
 
----
+- **GitHub Pages:** https://munozjh.github.io/Project-3/
+- **Netlify:** https://project3portafolio.netlify.app/
+- **GitHub Repository:** https://github.com/munozjh/Project-3
 
-## Overview
+## ✨ Features
 
-This project serves as an interactive digital portfolio highlighting over 12 years of enterprise telecommunications and network security engineering alongside software development projects in **C#/.NET, Python, JavaScript, and React**.
-
-### Key Features
-
-- **Modular Component Architecture:** Clean parent-child component hierarchy separating layout, sections (`Portfolio`, `About`, `Experience`, `Contact`), reusable cards, and footer.
-- **Fixed Sidebar Navigation:** Dark-themed sidebar featuring custom cybersecurity background imagery, profile summary, availability badge, direct section links, and email contact.
+- **Modular Component Architecture:** Parent-child React component hierarchy separating layout, sections (`Portfolio`, `About`, `Experience`, `Contact`), reusable cards, and footer.
+- **Fixed Cybersecurity Sidebar:** Dark-themed sidebar with custom background imagery (`seguridad-appgate.jpg`), profile summary, contact details, location, and section navigation.
+- **Downloadable CV (`CV.pdf`):** Direct CV download button in the sidebar served from the `public/` directory.
 - **Interactive Project Filtering:** Dynamic category filters (`ALL`, `IT & Security`, `Software Dev`, `Web & UI`) managed via React state in `App.jsx`.
-- **Data-Driven Content:** Centralized data model in `src/data/portfolioData.js`, keeping profile details, skills, project cards, work history, and education/certifications decoupled from UI components.
-- **Responsive Design:** Adapts cleanly across desktop, tablet, and mobile viewports using modern CSS Grid, Flexbox, and custom media queries.
-- **GitHub Pages Ready:** Configured with Vite's `base` path and `gh-pages` deployment scripts.
+- **Centralized Data Model:** Content organized in `src/data/portfolioData.js` to keep profile info, skills, projects, work experience, and education/certifications decoupled from UI components.
+- **Responsive Design:** Adapts cleanly across desktop, tablet, and mobile viewports using custom CSS, Flexbox, Grid, and media queries.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Frontend Framework:** React 19
 - **Build Tool & Dev Server:** Vite
 - **Styling:** Custom CSS3 (CSS Variables, Flexbox, Grid, Responsive Media Queries)
 - **Icons:** Lucide React
-- **Deployment:** GitHub Pages (`gh-pages`)
+- **Deployment:** GitHub Pages (`gh-pages`) & Netlify
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 Project-3/
 ├── public/
+│   └── CV.pdf       # Downloadable CV PDF file
 ├── src/
 │   ├── components/
-│   │   ├── Sidebar.jsx            # Child of App
+│   │   ├── Sidebar.jsx            # Child of App (navigation, profile & CV download)
 │   │   ├── PortfolioSection.jsx   # Child of App
 │   │   ├── ProjectCard.jsx        # Child of PortfolioSection (Grandchild of App)
 │   │   ├── AboutSection.jsx       # Child of App
@@ -56,12 +55,12 @@ Project-3/
 │   └── main.jsx                   # React DOM entry point
 ├── index.html                     # HTML root template
 ├── package.json                   # Dependencies and npm scripts
-└── vite.config.js                 # Vite configuration with GitHub Pages base path
+└── vite.config.js                 # Vite configuration
 ```
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -85,11 +84,11 @@ Project-3/
    ```bash
    npm run dev
    ```
-   Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
+   Open `http://localhost:5173` in your browser to view the application.
 
 ---
 
-## Available Scripts
+## 📜 Available Scripts
 
 | Command | Description |
 | :--- | :--- |
@@ -101,24 +100,22 @@ Project-3/
 
 ---
 
-## Deployment to GitHub Pages
+## 🌐 Deployment
 
-1. Confirm `base` in `vite.config.js` matches your repository name:
-   ```js
-   export default defineConfig({
-     plugins: [react()],
-     base: '/Project-3/',
-   })
-   ```
-2. Deploy to GitHub Pages:
-   ```bash
-   npm run deploy
-   ```
-3. In your GitHub repository, go to **Settings → Pages** and verify the source branch is set to **`gh-pages`** (`/ (root)`).
+### Netlify
+- **Branch to deploy:** `main`
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
+- **Base path (`vite.config.js`):** `./` (recommended for root deployment on Netlify)
+
+### GitHub Pages
+1. Set `base: '/Project-3/'` in `vite.config.js` when deploying to GitHub Pages.
+2. Run `npm run deploy` to build and publish to the `gh-pages` branch.
+3. In **Settings → Pages** on GitHub, ensure the source branch is set to **`gh-pages`** (`/ (root)`).
 
 ---
 
-## Author
+## 👩‍💻 Author
 
 **Jacklin Munoz**  
-Location: Karlskrona, Sweden  
+ Location: Karlskrona, Sweden  
