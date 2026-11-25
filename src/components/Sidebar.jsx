@@ -40,7 +40,10 @@ function Sidebar({
           </div>
           <h2 className="sidebar-name">{profile.name}</h2>
           <p className="sidebar-role">{profile.role || profile.title}</p>
+          <p className="sidebar-mail"> ✉️  {profile.email}</p>
+          <p className="sidebar-mail"> 💼  {profile.linkedin}</p>
           <span className="sidebar-location">{profile.location}</span>
+          <a href="/CV.pdf" download="JacklinMunoz-CV.pdf" className="btn-download-cv">Download CV</a>
         </div>
 
         <nav className="sidebar-nav">
@@ -51,10 +54,12 @@ function Sidebar({
                 key={item.id}
                 className={`nav-link ${activeSection === item.id ? "active" : ""}`}
                 onClick={() => onSelectSection(item.id)}
+                
               >
                 <Icon size={18} />
                 <span>{item.label}</span>
               </button>
+              
             );
           })}
         </nav>

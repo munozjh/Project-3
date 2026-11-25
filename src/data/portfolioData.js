@@ -3,9 +3,9 @@ export const profileData = {
   badgeText: "Available for IT Support, Cybersecurity & Junior Dev Roles",
   title: "IT Technical Support | Network & Cybersecurity | AI & Software Developer",
   location: "Karlskrona, Sweden",
-  email: "jacklin.munoz@example.com",
+  email: "munozjh@email.com",
   github: "https://github.com/munozjh",
-  linkedin: "https://linkedin.com",
+  linkedin: "linkedin.com/in/munozjh",
   summary:
     "Telecommunications Engineer and IT Specialist with over 12 years of experience in network infrastructure, cybersecurity (Fortinet, Check Point, Cisco ASA), and Tier 2/3 technical support. Currently expanding my profile into AI Programming and modern Full-Stack Software Development (C#, .NET, React, Python).",
   languages: [
