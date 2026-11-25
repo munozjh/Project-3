@@ -42,16 +42,14 @@ export const projectsData = [
     liveUrl: "",
     visualType: "code",
   },
-  {
+{
     id: 2,
-    title: "Enterprise Asset & EOL Tracker",
+    title: "Enterprise EDR & SIEM Integration",
     category: "IT & Security",
     description:
-      "Object-oriented asset lifecycle tracker featuring abstract classes for hardware (Computers/Mobiles) and automated End-of-Life (EOL) security alerts.",
-    technologies: ["C#", "OOP", "IT Asset Management"],
-    githubUrl: "",
-    liveUrl: "",
-    visualType: "shield",
+      "Deployment, configuration, and operational support for endpoint detection (EDR) and security monitoring (SIEM) across enterprise environments.",
+    tags: ["EDR", "SIEM", "Network Security", "ITIL"],
+    demoUrl: "",
   },
   {
     id: 3,
