@@ -10,6 +10,13 @@
   --text-muted: #475569;
   --border-color: #e2e8f0;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 * {
   box-sizing: border-box;
